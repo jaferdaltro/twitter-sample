@@ -1,1 +1,4 @@
-# empty
+confu: 
+  name: Tiburcio Teste
+  email: tiburcio@test.com
+  password_digest: <%= User.digest('password')%>
