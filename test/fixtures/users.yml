@@ -1,4 +1,27 @@
-confu: 
+tiburcio: 
   name: Tiburcio Teste
   email: tiburcio@test.com
   password_digest: <%= User.digest('password')%>
+  admin: true
+ 
+confucio: 
+  name: Confucio Teste
+  email: confucio@test.com
+  password_digest: <%= User.digest('password')%>
+
+francilvania: 
+  name: Francilvania Tribufu
+  email: fran@test.com
+  password_digest: <%= User.digest('password')%>
+
+elemilta: 
+  name: Elemilta Crush
+  email: crush@test.com
+  password_digest: <%= User.digest('password')%>
+
+<% 30.times do |n|%>
+user_<%= n%>:
+  name:  <%= "User #{n}" %>
+  email: <%= "user-#{n}@example.com" %>
+  password_digest: <%= User.digest('password') %>
+<%end%>
