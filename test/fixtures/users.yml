@@ -6,6 +6,13 @@ tiburcio:
   activated: true
   activated_at: <%=Time.zone.now%>
  
+inactive: 
+  name: Inactive User
+  email: inactive@test.com
+  password_digest: <%= User.digest('password')%>
+  admin: false
+  activated: false
+ 
 confucio: 
   name: Confucio Teste
   email: confucio@test.com
