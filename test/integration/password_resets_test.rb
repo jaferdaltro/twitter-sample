@@ -59,4 +59,17 @@ class PasswordResetsTest < ActionDispatch::IntegrationTest
     assert_not flash.empty?
     assert_redirected_to user
  end
+
+ test "expired password" do
+   get new_password_reset_path
+   post password_resets_path, params: {password_reset: {email: @user.email}}
+
+   @user = assigns(:user)
+   @user.update_attribute(:reset_at, 3.hours.ago)
+   path password_reset_path(@user.reset_token),
+            params:{email: @user.email, user: {password: 'foobar', password_confirmation: 'foobar'}}
+   assert_response :redirect
+   follow_redirect!
+   assert_match /^(.*?(\bpass\b)[^$]*)$/, response.body 
+ end
 end
