@@ -1,0 +1,24 @@
+trabalho:
+  content: "Eu estou procurando emprego agora " 
+  created_at: <%= 10.minutes.ago %>
+  user: tiburcio
+
+orange:
+  content: I like to eat orange
+  created_at: <%= 1.years.ago %>
+  user: tiburcio
+
+framboesa:
+  content: "I never eat framboesa"
+  created_at: <%= 10.days.ago %>
+  user: tiburcio
+
+enguespastes:
+  content: "Acredito que seja de um joguinho que permeia a cabeça da gente"
+  created_at: <%= 2.minutes.ago %>
+  user: tiburcio
+
+most_recent: 
+  content: "Writin a short test"  
+  created_at: <%= Time.zone.now %>
+  user: tiburcio
