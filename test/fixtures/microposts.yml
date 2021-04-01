@@ -11,17 +11,17 @@ orange:
 framboesa:
   content: "I never eat framboesa"
   created_at: <%= 10.days.ago %>
-  user: tiburcio
+  user: confucio
 
 enguespastes:
   content: "Acredito que seja de um joguinho que permeia a cabeça da gente"
   created_at: <%= 2.minutes.ago %>
-  user: tiburcio
+  user: francilvania
 
 most_recent: 
   content: "Writin a short test"  
   created_at: <%= Time.zone.now %>
-  user: tiburcio
+  user: confucio
 
 <% 30.times do |n| %>
 micropost_<%= n %>:

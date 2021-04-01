@@ -71,6 +71,13 @@ class User < ApplicationRecord
    def password_reset_expired?
     reset_at < 2.hours.ago
   end
+
+  # Defines a proto-feed.
+  # See "Following users" fot the full inplementation
+  def feed
+    Micropost.where('user_id = ?', id)
+  end
+  
   
 
   private

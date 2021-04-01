@@ -1,5 +1,4 @@
-<% if logged_in? %>
-  <div class="row">
+<div class="row">
   <asside class="col-md-4">
     <section class="user_info">
       <%= render 'shared/user_info' %>
@@ -13,9 +12,3 @@
     <%= render 'shared/feed' %>
   </div>
 </div>
-<% else %>
-  <%= render 'welcome' %>
-<% end %>
-<%#= image_tag "kitten.jpg", alt: "cat", width: "200"  %>
-
-  
