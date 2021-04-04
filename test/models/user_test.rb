@@ -84,4 +84,17 @@ class UserTest < ActiveSupport::TestCase
     end
   end
 
+  test "user follow/unfollow another user" do
+    tiburcio = users(:tiburcio)
+    confucio = users(:confucio)
+    assert_not tiburcio.following?(confucio)
+    tiburcio.follow(confucio)
+    assert tiburcio.following?(confucio)
+    assert confucio.followers.include?(tiburcio)
+    tiburcio.unfollow(confucio)
+    assert_not tiburcio.following?(confucio)
+    tiburcio.follow(tiburcio)
+    tiburcio.following?(tiburcio)
+  end
+
 end
