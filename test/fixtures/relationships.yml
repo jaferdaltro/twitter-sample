@@ -1,15 +1,15 @@
 one:
-  follower: tiburcio
-  followed: francilvania
+  follower: michael
+  followed: lana
 
 two:
-  follower: tiburcio
-  followed: confucio
+  follower: michael
+  followed: malory
 
 three:
-  follower: francilvania
-  followed: tiburcio
+  follower: lana
+  followed: michael
 
 four:
-  follower: elemilta
-  followed: tiburcio
+  follower: archer
+  followed: michael

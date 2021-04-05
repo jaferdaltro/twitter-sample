@@ -1,7 +1,7 @@
 class SessionsHelperTest < ActionView::TestCase
   
   def setup
-    @user = users(:tiburcio)
+    @user = users(:michael)
     remember(@user)
   end
   

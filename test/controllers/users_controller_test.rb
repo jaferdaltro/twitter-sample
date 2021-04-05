@@ -2,8 +2,8 @@ require "test_helper"
 
 class UsersControllerTest < ActionDispatch::IntegrationTest
   def setup
-    @user = users(:tiburcio)
-    @other_user = users(:confucio)
+    @user = users(:michael)
+    @other_user = users(:archer)
   end
   
   test "should get signup" do

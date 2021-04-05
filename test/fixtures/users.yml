@@ -1,44 +1,45 @@
-tiburcio: 
-  name: Tiburcio Teste
-  email: tiburcio@test.com
-  password_digest: <%= User.digest('password')%>
+michael:
+  name: Michael Example
+  email: michael@example.com
+  password_digest: <%= User.digest('password') %>
   admin: true
   activated: true
-  activated_at: <%=Time.zone.now%>
- 
-inactive: 
-  name: Inactive User
-  email: inactive@test.com
-  password_digest: <%= User.digest('password')%>
-  admin: false
+  activated_at: <%= Time.zone.now %>
+
+inactive:
+  name: Inactive Example
+  email: inactive@example.com
+  password_digest: <%= User.digest('password') %>
+  admin: true
   activated: false
- 
-confucio: 
-  name: Confucio Teste
-  email: confucio@test.com
-  password_digest: <%= User.digest('password')%>
-  activated: true
-  activated_at: <%=Time.zone.now%>
+  activated_at: <%= Time.zone.now %>
 
-francilvania: 
-  name: Francilvania Tribufu
-  email: fran@test.com
-  password_digest: <%= User.digest('password')%>
+archer:
+  name: Sterling Archer
+  email: duchess@example.gov
+  password_digest: <%= User.digest('password') %>
   activated: true
-  activated_at: <%=Time.zone.now%>
+  activated_at: <%= Time.zone.now %>
 
-elemilta: 
-  name: Elemilta Crush
-  email: crush@test.com
-  password_digest: <%= User.digest('password')%>
+lana:
+  name: Lana Kane
+  email: hands@example.gov
+  password_digest: <%= User.digest('password') %>
   activated: true
-  activated_at: <%=Time.zone.now%>
+  activated_at: <%= Time.zone.now %>
 
-<% 30.times do |n|%>
-user_<%= n%>:
+malory:
+  name: Malory Archer
+  email: boss@example.gov
+  password_digest: <%= User.digest('password') %>
+  activated: true
+  activated_at: <%= Time.zone.now %>
+
+<% 30.times do |n| %>
+user_<%= n %>:
   name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@example.com" %>
   password_digest: <%= User.digest('password') %>
   activated: true
-  activated_at: <%=Time.zone.now%>
-<%end%>
+  activated_at: <%= Time.zone.now %>
+<% end %>

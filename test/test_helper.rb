@@ -10,8 +10,8 @@ class ActiveSupport::TestCase
 
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
-  include ApplicationHelper  
-  include SessionsHelper 
+  # include ApplicationHelper  
+  # include SessionsHelper 
   # Add more helper methods to be used by all tests here...
 
   #return true if test user is logged in.

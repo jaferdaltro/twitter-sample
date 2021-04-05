@@ -2,7 +2,7 @@ require "test_helper"
 class UsersEditTest < ActionDispatch::IntegrationTest
 
   def setup
-    @user = users(:tiburcio)
+    @user = users(:michael)
   end
 
   test "should redirect index when not logged in" do
