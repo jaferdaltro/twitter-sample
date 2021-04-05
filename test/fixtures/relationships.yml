@@ -1,1 +1,15 @@
-# empty
+one:
+  follower: tiburcio
+  followed: francilvania
+
+two:
+  follower: tiburcio
+  followed: confucio
+
+three:
+  follower: francilvania
+  followed: tiburcio
+
+four:
+  follower: elemilta
+  followed: tiburcio
