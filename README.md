@@ -1,7 +1,7 @@
-# Ruby on Rails Tutorial Sample Application
+# Ruby on Rails Twitter Sample Application
 
-This is the sample application for [*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)(6th Edition)
+This is the sample application, come with an app that bears more than a resemblance of twitter.
+The full application includes all the major features needed by professional-grade web app, include user signup, login and account magnament.
 
 ## Getting started
 
@@ -28,3 +28,7 @@ If the test suite passes, you'll  be ready to run the app in a local server:
 ```
 $ rails server
 ```
+
+## Living web 
+
+https://sample-app-daltro.herokuapp.com
